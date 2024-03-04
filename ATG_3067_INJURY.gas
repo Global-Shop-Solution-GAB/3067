@@ -1,0 +1,304 @@
+Program.Sub.ScreenSU.Start
+gui.Login..create
+gui.Login..caption("Supervisor Login")
+gui.Login..size(2145,2430)
+gui.Login..position(0,0)
+gui.Login..event(unload,login_unload)
+gui.Login..alwaysontop(False)
+gui.Login..fontname("Arial")
+gui.Login..fontsize(8)
+gui.Login..forecolor(0)
+gui.Login..fontstyle(,,,,)
+gui.Login..BackColor(-2147483633)
+gui.Login..controlbox(True)
+gui.Login..maxbutton(False)
+gui.Login..minbutton(False)
+gui.Login..mousepointer(0)
+gui.Login..moveable(True)
+gui.Login..sizeable(False)
+gui.Login..ShowInTaskBar(True)
+gui.Login..titlebar(True)
+gui.Login.txtUser.create(textbox)
+gui.Login.txtUser.text("")
+gui.Login.txtUser.visible(True)
+gui.Login.txtUser.size(1215,300)
+gui.Login.txtUser.zorder(0)
+gui.Login.txtUser.position(350,335)
+gui.Login.txtUser.enabled(True)
+gui.Login.txtUser.alignment(0)
+gui.Login.txtUser.fontname("Arial")
+gui.Login.txtUser.fontsize(8)
+gui.Login.txtUser.BackColor(-2147483643)
+gui.Login.txtPass.create(textbox)
+gui.Login.txtPass.text("")
+gui.Login.txtPass.visible(True)
+gui.Login.txtPass.size(1215,300)
+gui.Login.txtPass.zorder(0)
+gui.Login.txtPass.position(340,825)
+gui.Login.txtPass.enabled(True)
+gui.Login.txtPass.alignment(0)
+gui.Login.txtPass.fontname("Arial")
+gui.Login.txtPass.fontsize(8)
+gui.Login.txtPass.event(keypress,txtpass_keypress)
+gui.Login.txtPass.BackColor(-2147483643)
+gui.Login.cmdlogin.create(button)
+gui.Login.cmdlogin.caption("Login")
+gui.Login.cmdlogin.visible(True)
+gui.Login.cmdlogin.size(855,375)
+gui.Login.cmdlogin.zorder(0)
+gui.Login.cmdlogin.position(495,1300)
+gui.Login.cmdlogin.enabled(True)
+gui.Login.cmdlogin.fontname("Arial")
+gui.Login.cmdlogin.fontsize(8)
+gui.Login.cmdlogin.event(click,cmdlogin_click)
+gui.Login.lbl1.create(label)
+gui.Login.lbl1.caption("Login:")
+gui.Login.lbl1.backstyle(0)
+gui.Login.lbl1.visible(True)
+gui.Login.lbl1.size(1935,255)
+gui.Login.lbl1.zorder(1)
+gui.Login.lbl1.position(335,110)
+gui.Login.lbl1.enabled(True)
+gui.Login.lbl1.fontname("Arial")
+gui.Login.lbl1.BackColor(-2147483633)
+gui.Login.lbl2.create(label)
+gui.Login.lbl2.caption("Password:")
+gui.Login.lbl2.backstyle(0)
+gui.Login.lbl2.visible(True)
+gui.Login.lbl2.size(1935,255)
+gui.Login.lbl2.zorder(1)
+gui.Login.lbl2.position(365,635)
+gui.Login.lbl2.enabled(True)
+gui.Login.lbl2.fontname("Arial")
+gui.Login.lbl2.BackColor(-2147483633)
+gui.Login.txtUser.tabstop(True)
+gui.Login.txtUser.tabindex(1)
+gui.Login.txtPass.tabstop(True)
+gui.Login.txtPass.tabindex(2)
+gui.Login.cmdlogin.tabstop(True)
+gui.Login.cmdlogin.tabindex(3)
+
+
+gui.SUPERVSR..create
+gui.SUPERVSR..caption("Supervisor")
+gui.SUPERVSR..size(4830,4155)
+gui.SUPERVSR..position(0,0)
+gui.SUPERVSR..alwaysontop(True)
+gui.SUPERVSR..fontname("Arial")
+gui.SUPERVSR..fontsize(8)
+gui.SUPERVSR..forecolor(0)
+gui.SUPERVSR..fontstyle(,,,,)
+gui.SUPERVSR..BackColor(-2147483633)
+gui.SUPERVSR..controlbox(True)
+gui.SUPERVSR..maxbutton(False)
+gui.SUPERVSR..minbutton(False)
+gui.SUPERVSR..mousepointer(0)
+gui.SUPERVSR..moveable(True)
+gui.SUPERVSR..sizeable(False)
+gui.SUPERVSR..ShowInTaskBar(True)
+gui.SUPERVSR..titlebar(True)
+gui.SUPERVSR.txtreason.create(textboxm)
+gui.SUPERVSR.txtreason.text("")
+gui.SUPERVSR.txtreason.visible(True)
+gui.SUPERVSR.txtreason.size(4395,1770)
+gui.SUPERVSR.txtreason.zorder(0)
+gui.SUPERVSR.txtreason.position(100,700)
+gui.SUPERVSR.txtreason.enabled(True)
+gui.SUPERVSR.txtreason.alignment(0)
+gui.SUPERVSR.txtreason.fontname("Arial")
+gui.SUPERVSR.txtreason.fontsize(8)
+gui.SUPERVSR.txtreason.maxLength(100)
+gui.SUPERVSR.txtreason.BackColor(-2147483643)
+gui.SUPERVSR.lbl1.create(label)
+gui.SUPERVSR.lbl1.caption("Why has an accident report not been filled out? (Required)")
+gui.SUPERVSR.lbl1.backstyle(0)
+gui.SUPERVSR.lbl1.visible(True)
+gui.SUPERVSR.lbl1.size(4260,255)
+gui.SUPERVSR.lbl1.zorder(1)
+gui.SUPERVSR.lbl1.position(200,200)
+gui.SUPERVSR.lbl1.enabled(True)
+gui.SUPERVSR.lbl1.alignment(0)
+gui.SUPERVSR.lbl1.fontname("Arial")
+gui.SUPERVSR.lbl1.fontsize(8)
+gui.SUPERVSR.lbl1.BackColor(-2147483633)
+gui.SUPERVSR.chkwaiver.create(checkbox)
+gui.SUPERVSR.chkwaiver.caption("Has the employee signed a waiver stating he is not injured?")
+gui.SUPERVSR.chkwaiver.visible(True)
+gui.SUPERVSR.chkwaiver.size(4155,570)
+gui.SUPERVSR.chkwaiver.zorder(0)
+gui.SUPERVSR.chkwaiver.position(200,2600)
+gui.SUPERVSR.chkwaiver.enabled(True)
+gui.SUPERVSR.chkwaiver.alignment(0)
+gui.SUPERVSR.chkwaiver.fontname("Arial")
+gui.SUPERVSR.chkwaiver.fontsize(8)
+gui.SUPERVSR.cmdSave.create(button)
+gui.SUPERVSR.cmdSave.caption("Save")
+gui.SUPERVSR.cmdSave.visible(True)
+gui.SUPERVSR.cmdSave.size(855,375)
+gui.SUPERVSR.cmdSave.zorder(0)
+gui.SUPERVSR.cmdSave.position(1735,3120)
+gui.SUPERVSR.cmdSave.enabled(True)
+gui.SUPERVSR.cmdSave.fontname("Arial")
+gui.SUPERVSR.cmdSave.fontsize(8)
+gui.SUPERVSR.cmdSave.event(click,cmdsave_click)
+
+
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+'Injury question
+'HOOK 15922
+
+
+V.Local.sSQL.Declare(String)
+V.Local.return.Declare(Long)
+V.Local.imaxno.Declare(Long)
+V.Local.breturn.Declare(Boolean)
+V.Local.bval.Declare(Boolean)
+V.Global.User.Declare(String)
+V.Global.injno.Declare(Long)
+
+Gui.Login.txtPass.PasswordChar("*")
+F.ODBC.Connection!conx.OpenConnection(V.Ambient.PDSN,V.Ambient.PUser,V.Ambient.PPass)
+
+
+F.Intrinsic.String.Concat("Select * FROM ATG_3067_INJURY WHERE EMPLOYEE='",V.Passed.009993,"' AND SUPERVSR='NONE' AND EMP_INJURY='Y' ",V.Local.sSQL)
+
+F.ODBC.Connection!conx.OpenRecordsetRO("rstInj",V.Local.sSQL)
+F.Intrinsic.Control.If(V.ODBC.conx!rstInj.EOF,=,False)
+V.Global.injno.Set(V.ODBC.conx!rstInj.FieldValTrim!INJURY_NO)
+	Gui.Login..Show
+F.Intrinsic.Control.Else
+	F.Intrinsic.Control.CallSub(Injure)
+F.Intrinsic.Control.EndIf
+F.ODBC.conx!rstInj.Close
+
+Program.Sub.Main.End
+
+program.sub.txtpass_keypress.start
+F.Intrinsic.Control.If(V.Args.KEYASCII,=,13)
+	F.Intrinsic.Control.CallSub(Cmdlogin_click)
+F.Intrinsic.Control.EndIf
+
+program.sub.txtpass_keypress.end
+
+program.sub.cmdlogin_click.start
+V.Local.bval.Declare(Boolean)
+V.Local.breturn.Declare(Boolean)
+V.Local.sSQL.Declare(String)
+V.Local.return.Declare(Long)
+
+
+Gui.Login..Visible(false)
+
+f.Global.Security.validateuser(V.Screen.Login!txtUser.Text,V.Screen.Login!txtpass.Text,V.Local.bval)
+
+F.Intrinsic.Control.If(V.Local.bval,=,False)
+	F.Intrinsic.UI.Msgbox("Bad User or Password. (User is case sensitive.)","Login Error.")
+	Gui.Login..Visible(true)
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+
+F.Global.Security.IsInGroup(V.Screen.Login!txtuser.Text,"INJURY",V.Local.breturn)
+
+F.Intrinsic.Control.If(V.Local.breturn,=,False)
+	F.Intrinsic.UI.Msgbox("User not part of 'INJURY' security group!","Login Error.")
+	Gui.Login..Visible(true)
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+
+V.Global.User.Set(V.Screen.Login!txtuser.Text)
+
+F.Intrinsic.String.Concat("select * from ATG_3067_INJURY where INJURY_NO='",V.Global.injno,"'",V.Local.sSQL)
+F.ODBC.Connection!conx.OpenRecordsetRW("RSTsup",V.Local.sSQL)
+
+
+F.Intrinsic.UI.Msgbox("Has an accident report been filled out?","Injuries",4,V.Local.return)
+
+F.ODBC.conx!RSTsup.Set!SUPERVSR(V.Global.User)
+F.Intrinsic.Control.If(V.Local.return,=,7)
+	Gui.SUPERVSR..Show
+F.Intrinsic.Control.Else
+	F.ODBC.conx!RSTsup.Set!WAIVER("N")
+	F.ODBC.conx!RSTsup.Set!REASON("See accident report.")
+	F.ODBC.conx!RSTsup.Update
+	F.Intrinsic.Control.End
+F.Intrinsic.Control.EndIf
+
+
+
+
+program.sub.cmdlogin_click.end
+
+program.sub.login_unload.start
+V.Passed.777777.Set(1)
+F.Intrinsic.Control.end
+
+
+program.sub.login_unload.end
+
+program.sub.cmdsave_click.start
+
+f.Intrinsic.Control.If(V.Screen.SUPERVSR!txtreason.Text.trim,=,"")
+	F.Intrinsic.UI.Msgbox("You must enter a reason!","Reason Required.")
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.If(V.Screen.SUPERVSR!CHKWAIVER.Value,=,0)
+	F.Intrinsic.UI.Msgbox("You must have employee sign waiver!","Required.")
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+
+F.ODBC.conx!RSTsup.Set!REASON(V.Screen.SUPERVSR!txtreason.Text)
+
+F.Intrinsic.Control.If(V.Screen.SUPERVSR!chkwaiver.Value,=,1)
+	F.ODBC.conx!RSTsup.Set!WAIVER("Y")
+F.Intrinsic.Control.Else
+	F.ODBC.conx!RSTsup.Set!WAIVER("N")
+F.Intrinsic.Control.EndIf
+
+F.ODBC.conx!RSTsup.Update
+
+F.Intrinsic.Control.End
+
+program.sub.cmdsave_click.end
+
+Program.Sub.INJURE.Start
+V.Local.IMAXNO.Declare(Long)
+V.Local.return.Declare(Long)
+
+
+	F.ODBC.Connection!conx.OpenRecordsetRO("rstMAX","select MAX(INJURY_NO) AS INJURY_NO FROM ATG_3067_INJURY")
+	F.Intrinsic.Control.If(V.ODBC.conx!rstMAX.FieldValTrim!INJURY_NO,=,"")
+		V.Local.imaxno.Set(0)
+	F.Intrinsic.Control.Else
+		F.Intrinsic.Math.Add(V.ODBC.conx!rstMAX.FieldValTrim!INJURY_NO,1,V.Local.imaxno)
+	F.Intrinsic.Control.EndIf
+	F.ODBC.conx!rstMAX.Close
+
+	F.ODBC.Connection!conx.OpenRecordsetRW("rstlog","Select * from ATG_3067_INJURY")
+
+	F.Intrinsic.UI.Msgbox("Do you have injuries to report?","Injuries",4,V.Local.return)
+	F.ODBC.conx!rstlog.AddNew
+	F.ODBC.conx!rstlog.Set!EMPLOYEE(V.Passed.009993)
+	F.ODBC.conx!rstlog.Set!LOGTIME(V.Ambient.Now)
+	F.ODBC.conx!rstlog.Set!INJURY_NO(V.Local.IMAXNO)
+
+	F.Intrinsic.Control.If(V.Local.return,=,7)
+		F.ODBC.conx!rstlog.Set!EMP_INJURY("N")
+		F.ODBC.conx!rstlog.Update
+		F.Intrinsic.Control.end
+	F.Intrinsic.Control.EndIf
+	F.ODBC.conx!rstlog.Set!EMP_INJURY("Y")
+	F.ODBC.conx!rstlog.Update
+	F.Intrinsic.UI.Msgbox("You are not clocked out!  Please see your supervisor immediately!","See Supervisor")
+	V.Passed.777777.Set(1)
+	F.Intrinsic.Control.end
+
+Program.Sub.INJURE.End
+
+
